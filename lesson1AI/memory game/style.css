@@ -1,0 +1,144 @@
+:root {
+    --bg-color: #1a1a2e;
+    --card-bg: #16213e;
+    --card-back: #0f3460;
+    --accent: #e94560;
+    --text: #eaeaea;
+    --glow: 0 0 10px rgba(233, 69, 96, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    text-align: center;
+    width: 100%;
+    max-width: 640px;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    text-shadow: var(--glow);
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: var(--accent);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: var(--glow);
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    perspective: 1000px; /* Essential for 3D effect */
+}
+
+/* Card Styling */
+.card {
+    background-color: transparent;
+    height: 100px;
+    cursor: pointer;
+    position: relative;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card.matched .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front and Back Faces */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    font-size: 2.5rem;
+    border: 2px solid #333;
+}
+
+.card-front {
+    background-color: var(--card-back); /* The "hidden" side */
+    color: transparent; 
+}
+
+/* Add a pattern or icon for the back of the card */
+.card-front::after {
+    content: '?'; 
+    color: rgba(255,255,255,0.2);
+    font-size: 2rem;
+}
+
+.card-back {
+    background-color: var(--card-bg);
+    color: white;
+    transform: rotateY(180deg);
+    border-color: var(--accent);
+    box-shadow: var(--glow);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr); /* Keep 4x4 or switch to 3x4 if needed */
+        gap: 10px;
+    }
+    .card {
+        height: 70px;
+    }
+}

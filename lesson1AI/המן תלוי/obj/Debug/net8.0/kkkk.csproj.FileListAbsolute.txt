@@ -1,0 +1,14 @@
+C:\Users\The user\Documents\brachi\kkkk\bin\Debug\net8.0\kkkk.exe
+C:\Users\The user\Documents\brachi\kkkk\bin\Debug\net8.0\kkkk.deps.json
+C:\Users\The user\Documents\brachi\kkkk\bin\Debug\net8.0\kkkk.runtimeconfig.json
+C:\Users\The user\Documents\brachi\kkkk\bin\Debug\net8.0\kkkk.dll
+C:\Users\The user\Documents\brachi\kkkk\bin\Debug\net8.0\kkkk.pdb
+C:\Users\The user\Documents\brachi\kkkk\obj\Debug\net8.0\kkkk.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\The user\Documents\brachi\kkkk\obj\Debug\net8.0\kkkk.AssemblyInfoInputs.cache
+C:\Users\The user\Documents\brachi\kkkk\obj\Debug\net8.0\kkkk.AssemblyInfo.cs
+C:\Users\The user\Documents\brachi\kkkk\obj\Debug\net8.0\kkkk.csproj.CoreCompileInputs.cache
+C:\Users\The user\Documents\brachi\kkkk\obj\Debug\net8.0\kkkk.dll
+C:\Users\The user\Documents\brachi\kkkk\obj\Debug\net8.0\refint\kkkk.dll
+C:\Users\The user\Documents\brachi\kkkk\obj\Debug\net8.0\kkkk.pdb
+C:\Users\The user\Documents\brachi\kkkk\obj\Debug\net8.0\kkkk.genruntimeconfig.cache
+C:\Users\The user\Documents\brachi\kkkk\obj\Debug\net8.0\ref\kkkk.dll
